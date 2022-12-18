@@ -1,1 +1,3 @@
-# Bcard_Wed
+# fcushop-demo
+
+This is the demo site of fcu shop

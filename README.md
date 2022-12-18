@@ -1,3 +1,4 @@
-# fcushop-demo
+# Bcard-Web
 
-This is the demo site of fcu shop
+這是之前一個前端介面的範例，可以用這個改看看
+

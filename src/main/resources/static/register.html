@@ -42,10 +42,7 @@
             </ul>
 
 
-            <ul class="navbar-nav mb-2 mb-lg-0 d-flex">
-                <li><a class="dropdown-item" href="login.html">登入</a></li>
-                <li><a class="dropdown-item" href="register.html">註冊</a></li>
-            </ul>
+
 
             <!--<form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -156,6 +153,8 @@
                   console.log( "The request is complete!" );
                 });
               alert("註冊成功！！");//不管怎樣按下註冊就顯示註冊成功。
+              window.event.returnValue=false;
+              location.href = "login.html";
             }
         </script>
 </body>

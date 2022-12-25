@@ -28,5 +28,11 @@ class FcushopApplicationTests {
 		Assertions.assertEquals("Error",sc.index("","123456"));
 		Assertions.assertEquals("Success",sc.index("123456","123456"));
 	}
+	
+	@Test
+	void testAge(){
+		Assertions.assertEquals("Too young",sc.age(1111010));
+		Assertions.assertEquals("Success",sc.age(901128));
+	}
 
 }

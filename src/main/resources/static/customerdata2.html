@@ -1,5 +1,7 @@
 <!doctype html>
+
 <html lang="en">
+<link rel="stylesheet" href="styleshoppingcart.css">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -9,11 +11,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Bcard Web</title>
+    <title>BKShop首頁</title>
 </head>
-<body style="background:#e7dbca">
-<body>
-
+<body style="background:#F0F0F0">
+<!--<body background="http://i.imgur.com/1G4Swga.png" style="background-size:102px 136px">
+'https://.pngtree.com/so/鞋子矢量可編輯源文件設置圖元素'>鞋子矢量可編輯源文件設置圖元素 png來自 .pngtree.com/-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="index.html">Bcard</a>
@@ -44,7 +46,7 @@
             <ul class="navbar-nav mb-2 mb-lg-0 d-flex">
                 <li><a class="dropdown-item" href="login.html">登入</a></li>
                 <li><a class="dropdown-item" href="register.html">註冊</a></li>
-                <li><a class="dropdown-item" href="pofile.html">會員中心</a></li>
+                <li><a class="dropdown-item" href="customerdata2.html">會員中心</a></li>
                 <li><a class="dropdown-item" href="collection.html">收藏</a></li>
             </ul>
 
@@ -56,9 +58,49 @@
     </div>
 </nav>
 
-<div class="container">
-    <h1 class="mt-3">開發中...</h1>
-</div>
+<body>
+
+<div >
+
+
+    <div class="column left10">
+        <p><br></p>
+    </div>
+    <div>
+        <h1>客戶資料</h1>
+        <p><br></p>
+        <div class="column left2">
+            <table id="customers">
+
+
+                <tr>
+                    <td>暱稱</td>
+                    <td>May</td>
+
+                </tr>
+
+                <tr>
+                    <td>電話</td>
+                    <td>0900000000  <button class="btn btn-outline-secondary" type="button"  id="searchbook1" style="float : right" "background-color:#C4E1FF;color:#000000">變更</button></td>
+
+                </tr>
+                <tr>
+                    <td>電子郵件</td>
+                    <td>d0957395@gmail.com <button class="btn btn-outline-secondary" type="button"  id="searchbook" style="float : right" "background-color:#C4E1FF;color:#000000">變更</button></td></td>
+
+                </tr>
+                <tr>
+                    <td>生日</td>
+                    <td>90/11/28</td>
+
+                </tr>
+                <tr>
+                    <td>地址</td>
+                    <td>台中市逢大路1號 <button class="btn btn-outline-secondary" type="button"  id="searchbook" style="float : right" "background-color:#C4E1FF;color:#000000">變更</button></td></td>
+
+                </tr>
+        </div></div></div>
+</table>
 
 <!-- Optional JavaScript; choose one of the two! -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -74,73 +116,17 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 -->
 
-<script>
-  $( document ).ready( function() {
-    console.log( "ready!" );
-    emptyProducts();
-    getProducts('products')
-  });
 
-    $('#searchProduct').click(function() {
-      const keyword = $('#productKeyword').val();
-      if (keyword.trim() === '') {
-        getProducts('products');
-      } else {
-        getProducts('products/' + keyword);
-        emptyProducts();
-      }
-    });
+<script type="text/javascript" src="/jquery/jquery.js"></script>
+<script type="text/javascript">
+        $("#searchbook1").click(function() {
 
-    function emptyProducts() {
-      $('#productList').empty();
-    }
-
-    function addProducts(products) {
-      for ( let product of products ) {
-        let html = '<div class="card col-4">';
-        html += '<img src="' + product.imageUrl + '" class="card-img-top" alt="' + product.name + '">';
-        html += '<div class="card-body">';
-        html += '<h5 class="card-title">' + product.name + '</h5>';
-        html += '<p class="card-text">' + product.description + '</p>';
-        html += '<a href="#" class="btn btn-primary">' + product.price + '</a>';
-        html += '</div>';
-        html += '</div>';
-        $('#productList').append(html);
-      }
-    }
-
-    function getProducts(targetUrl) {
-      // Using the core $.ajax() method
-      $.ajax({
-          // The URL for the request
-          url: targetUrl,
-
-          // Whether this is a POST or GET request
-          type: "GET",
-
-          // The type of data we expect back
-          dataType : "json",
-      })
-        // Code to run if the request succeeds (is done);
-        // The response is passed to the function
-        .done(function( json ) {
-          let products = json;
-          addProducts(products);
-        })
-        // Code to run if the request fails; the raw request and
-        // status codes are passed to the function
-        .fail(function( xhr, status, errorThrown ) {
-          console.log( "Sorry, there was a problem!" );
-          console.log( "Error: " + errorThrown );
-          console.log( "Status: " + status );
-          console.dir( xhr );
-        })
-        // Code to run regardless of success or failure;
-        .always(function( xhr, status ) {
-          console.log( "The request is complete!" );
-        });
-    }
-
+                    location.href = "phonechang.html";
+                    window.event.returnValue=false;
+            });
 </script>
+
+
+
 </body>
 </html>

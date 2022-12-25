@@ -25,53 +25,31 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">首頁</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="customerservice.html">客服系統</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="pricelow.html">優惠資訊</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Cooperation.html">合作方式</a>
-                </li>
-
+                    <a class="nav-link active" aria-current="page" href="#">首頁</a>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        商品分類目錄
+                        話題分類
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="broswer.html">文學小說</a></li>
-                        <li><a class="dropdown-item" href="broswer1.html">科幻小說</a></li>
-                        <li><a class="dropdown-item" href="broswer2.html">言情小說</a></li>
-                        <li><a class="dropdown-item" href="broswer3.html">心靈勵志</a></li>
-                        <li><a class="dropdown-item" href="broswer4.html">社會哲思</a></li>
-                        <li><a class="dropdown-item" href="broswer5.html">參考書</a></li>
-                        <li><a class="dropdown-item" href="broswer6.html">藝術設計</a></li>
-                        <li><a class="dropdown-item" href="broswer7.html">飲食料理</a></li>
-                        <li><a class="dropdown-item" href="broswer8.html">電腦資訊</a></li>
-                        <li><a class="dropdown-item" href="broswer9.html">宗教命理</a></li>
+                        <li><a class="dropdown-item" href="#">感情版</a></li>
+                        <li><a class="dropdown-item" href="#">心情版</a></li>
+                        <li><a class="dropdown-item" href="#">校園版</a></li>
+                        <li><a class="dropdown-item" href="#">穿搭版</a></li>
+                        <li><a class="dropdown-item" href="#">女孩版</a></li>
+                        <li><a class="dropdown-item" href="#">男孩版</a></li>
                     </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="translate.html">語言切換</a>
                 </li>
             </ul>
 
 
-
             <ul class="navbar-nav mb-2 mb-lg-0 d-flex">
+                <li><a class="dropdown-item" href="login.html">登入</a></li>
+                <li><a class="dropdown-item" href="register.html">註冊</a></li>
                 <li class="nav-item">
-                    <a class="nav-link" href="login.html">登入/註冊</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="customerdata.html">會員專區</a>
+                    <a class="nav-link" href="#">會員中心</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="shoppingcart.html">購物車(0)</a>
+                    <a class="nav-link" href="#">收藏</a>
                 </li>
             </ul>
 
@@ -88,22 +66,20 @@
   <font color="#272727" size="6">Register</font>
   <br><br>
   <form name="registerForm" method="post" onsubmit="return validateForm()">
-    帳  號user_name：
+    帳  號 user_name：
     <input id="user_name" type="text" placeholder="用戶名"><br/><br/>
     密  碼 Password ：
     <input id="user_password" type="user_password" placeholder="密碼"><br/><br/>
     確 認 密 碼  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp：
       <input id="user_password_check" type="user_password" name="user_password_check" placeholder="確認密碼"><br/><br/>
       &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp姓 名&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp：
-      <input id="user_password" type="text" placeholder="姓名"><br/><br/>
-      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp手 機&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp：
-      <input id="user_password" type="text" placeholder="手機"><br/><br/>
-      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp信 箱 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp：
-      <input id="user_password" type="text" placeholder="信箱"><br/><br/>
-      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp地 址 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp：
-      <input id="user_password" type="text" placeholder="地址"><br/><br/>
+      <input id="name" type="text" placeholder="姓名"><br/><br/>
       &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp生 日 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp：
-      <input id="user_password" type="text" placeholder="生日"><br/><br/>
+      <input id="user_birthday" type="text" placeholder="生日"><br/><br/>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp手 機&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp：
+      <input id="user_phone" type="text" placeholder="手機"><br/><br/>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp信 箱 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp：
+      <input id="user_email" type="text" placeholder="信箱"><br/><br/>
 
     <input id="register" type="submit" value="註冊" name="submit">
     <input type="reset" value="重設" name="submit">
@@ -129,7 +105,7 @@
                     setTimeout(function(){
                       history.go(0);
                     },100);
-                    alert();//沒有加會噴錯，找了兩個禮拜的bug解決方法，只找到這種解法。
+                    alert();//沒有加會噴錯，只找到這種解法。
                 }
                 else{
                     //console.log( "register good" );
@@ -178,14 +154,14 @@
                         alert("此帳號已存在");
                     }
                     else{
-                      alert("Error");
+                      alert("error");
                     }
                   }
                 })
                 .always(function( xhr, status ) {
                   console.log( "The request is complete!" );
                 });
-              alert();//沒有加會噴錯，找了兩個禮拜的bug解決方法，只找到這種解法。
+              alert("註冊成功！！");//不管怎樣按下註冊就顯示註冊成功。
             }
         </script>
 </body>

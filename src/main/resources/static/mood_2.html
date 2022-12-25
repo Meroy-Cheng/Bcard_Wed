@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Bcard Web</title>
+
+    <style>
+        .line {
+            border-top: 1px solid gray;
+        }
+
+        #outer {
+            width: 100%;
+            text-align: center;
+        }
+
+        .inner {
+            display: inline-block;
+            align-content: center;
+        }
+
+        textarea{
+            margin-top: 10%;
+            background-color: #f7e4ec;
+            border-color: #8D9FB3;
+        }
+    </style>
+</head>
+<body style="background:#e7dbca">
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="#">Bcard</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">首頁</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        話題分類
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">感情版</a></li>
+                        <li><a class="dropdown-item" href="#">心情版</a></li>
+                        <li><a class="dropdown-item" href="#">校園版</a></li>
+                        <li><a class="dropdown-item" href="#">穿搭版</a></li>
+                        <li><a class="dropdown-item" href="#">女孩版</a></li>
+                        <li><a class="dropdown-item" href="#">男孩版</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav mb-2 mb-lg-0 d-flex">
+                <li><a class="dropdown-item" href="login.html">登入</a></li>
+                <li><a class="dropdown-item" href="register.html">註冊</a></li>
+                <li><a class="dropdown-item" href="pofile.html">會員中心</a></li>
+                <li><a class="dropdown-item" href="collection.html">收藏</a></li>
+            </ul>
+
+            <!--<form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>-->
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <h1 class="mt-3">心情版</h1>
+
+    <br>
+    <br>
+    <div class="container div" style="border:2px #ccc solid;border-radius:10px;background-color:#f7e4ec"
+    ">
+    <h4></h4>
+    <hr class="line">
+    <div class="row">
+
+            <span class="container" style="margin-left: 5%;margin-top: 5%; cursor:pointer; "
+                  onclick="location.href='';">
+            <h4 style="font-weight: bold;">我只是想對你好而已嘛🥺</h4>
+            <p class="mt-3">系上有個很帥的學長（我覺得很帥😍<br>
+            唱歌好聽，又會打籃球，功課又好<br><br><br>
+            我就想跟他交朋友<br>
+            學期初為了接近他<br>
+            買了飲料說買一送一喝不完<br>
+            看他打籃球送水<br>
+            跟他借筆記<br>
+            變熟後就開始聊天<br>
+            當個小跟班<br>
+            在他身邊晃其實就很開心了<br><br><br>
+            結果昨天晚上他跟我告白！！<br>
+            可是我只是想對他好，沒有想跟他在一起啊啊啊啊😱😱<br>
+            求不會尷尬的拒絕方法🥺<br>
+            如果他問我為什麼不跟他在一起還要對他那麼好該怎麼辦🥺</p>
+
+            <div id="outer" style="margin-left: 38%; margin-bottom: 20px">
+              <div class="inner">
+                  <button id="btn" type="submit" class="btn btn-outline-secondary" style=" height: 40px;"
+                          onClick="return false;"><h6>讚</h6></button>
+              </div>
+              <div class="inner">
+                  <button type="submit" class="btn btn-outline-danger" style=" height: 40px;"
+                          onClick="return false;"><h6>收藏</h6></button>
+              </div>
+            </div>
+
+            <div>
+
+            <hr class="line">
+
+            <textarea cols="110"></textarea>
+
+            <button type="submit" class="btn btn-outline-secondary" style=" height: 40px; margin-bottom: 55px"
+                    onClick="return false;"><h6>發送</h6></button>
+        </div>
+    </div>
+    <hr class="line">
+
+</div>
+
+</div>
+
+
+<!-- Optional JavaScript; choose one of the two! -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+-->
+
+<script>
+    const btn = document.getElementById('btn');
+
+    btn.addEventListener('click', function onClick() {
+        btn.style.backgroundColor = 'salmon';
+        btn.style.color = 'white';
+    });
+
+</script>
+
+<script>
+    $(document).ready(function () {
+        console.log("ready!");
+        emptyProducts();
+        getProducts('products')
+    });
+
+    $('#searchProduct').click(function () {
+        const keyword = $('#productKeyword').val();
+        if (keyword.trim() === '') {
+            getProducts('products');
+        } else {
+            getProducts('products/' + keyword);
+            emptyProducts();
+        }
+    });
+
+    function emptyProducts() {
+        $('#productList').empty();
+    }
+
+    function addProducts(products) {
+        for (let product of products) {
+            let html = '<div class="card col-4">';
+            html += '<img src="' + product.imageUrl + '" class="card-img-top" alt="' + product.name + '">';
+            html += '<div class="card-body">';
+            html += '<h5 class="card-title">' + product.name + '</h5>';
+            html += '<p class="card-text">' + product.description + '</p>';
+            html += '<a href="#" class="btn btn-primary">' + product.price + '</a>';
+            html += '</div>';
+            html += '</div>';
+            $('#productList').append(html);
+        }
+    }
+
+    function getProducts(targetUrl) {
+        // Using the core $.ajax() method
+        $.ajax({
+            // The URL for the request
+            url: targetUrl,
+
+            // Whether this is a POST or GET request
+            type: "GET",
+
+            // The type of data we expect back
+            dataType: "json",
+        })
+            // Code to run if the request succeeds (is done);
+            // The response is passed to the function
+            .done(function (json) {
+                let products = json;
+                addProducts(products);
+            })
+            // Code to run if the request fails; the raw request and
+            // status codes are passed to the function
+            .fail(function (xhr, status, errorThrown) {
+                console.log("Sorry, there was a problem!");
+                console.log("Error: " + errorThrown);
+                console.log("Status: " + status);
+                console.dir(xhr);
+            })
+            // Code to run regardless of success or failure;
+            .always(function (xhr, status) {
+                console.log("The request is complete!");
+            });
+    }
+
+</script>
+</body>
+</html>

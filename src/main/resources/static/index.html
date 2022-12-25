@@ -1,6 +1,6 @@
 <!doctype html>
-<html lang="en">
-<head>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head th:include="fragments/head :: head">
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +14,7 @@
 <body style="background:#e7dbca">
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
+  <div class="container-fluid" th:replace="fragments/header :: header">
     <a class="navbar-brand" href="#">Bcard</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,8 +43,6 @@
       <ul class="navbar-nav mb-2 mb-lg-0 d-flex">
         <li><a class="dropdown-item" href="login.html">登入</a></li>
         <li><a class="dropdown-item" href="register.html">註冊</a></li>
-        <li><a class="dropdown-item" href="customerdata2.html">會員中心</a></li>
-        <li><a class="dropdown-item" href="collection.html">收藏</a></li>
       </ul>
 
       <!--<form class="d-flex">

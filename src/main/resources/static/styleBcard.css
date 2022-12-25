@@ -15,6 +15,13 @@ body{
     color: #888;
     line-height: 30px;
 }
+.container div {
+    background-color:#8D9FB3;
+    width:200px;
+    height:200px;
+    text-align:center;
+    }
+
 .item_header .item_detail{
     width: 50%;
 }

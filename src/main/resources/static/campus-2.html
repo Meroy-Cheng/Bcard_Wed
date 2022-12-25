@@ -13,7 +13,9 @@
 
     <style>
         .line {
-            border-top: 1px solid gray;
+            border-top: 2px solid gray;
+            width: 90%;
+            margin-top: 3%;
         }
 
         #outer {
@@ -50,19 +52,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">首頁</a>
+                    <a class="nav-link active" aria-current="page" href="index.html#">首頁</a>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                        data-bs-toggle="dropdown" aria-expanded="false">
                         話題分類
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">感情版</a></li>
-                        <li><a class="dropdown-item" href="#">心情版</a></li>
-                        <li><a class="dropdown-item" href="#">校園版</a></li>
-                        <li><a class="dropdown-item" href="#">穿搭版</a></li>
-                        <li><a class="dropdown-item" href="#">女孩版</a></li>
-                        <li><a class="dropdown-item" href="#">男孩版</a></li>
+                        <li><a class="dropdown-item" href="relationship.html">感情版</a></li>
+                        <li><a class="dropdown-item" href="mood.html">心情版</a></li>
+                        <li><a class="dropdown-item" href="campus.html">校園版</a></li>
+                        <li><a class="dropdown-item" href="dress.html">穿搭版</a></li>
+                        <li><a class="dropdown-item" href="girl.html">女孩版</a></li>
+                        <li><a class="dropdown-item" href="boy.html">男孩版</a></li>
                     </ul>
                 </li>
             </ul>
@@ -83,37 +85,22 @@
 </nav>
 
 <div class="container">
-    <h1 class="mt-3">心情版</h1>
+    <h1 class="mt-3">校園</h1>
 
     <br>
     <br>
-    <div class="container div" style="border:2px #ccc solid;border-radius:10px;background-color:#f7e4ec"
-    ">
+    <div class="container div" style="border:2px #ccc solid;border-radius:10px;background-color:#f7e4ec">
     <h4></h4>
-    <hr class="line">
+
     <div class="row">
 
-            <span class="container" style="margin-left: 5%;margin-top: 5%; cursor:pointer; "
-                  onclick="location.href='';">
-            <h4 style="font-weight: bold;">我只是想對你好而已嘛🥺</h4>
-            <p class="mt-3">系上有個很帥的學長（我覺得很帥😍<br>
-            唱歌好聽，又會打籃球，功課又好<br><br><br>
-            我就想跟他交朋友<br>
-            學期初為了接近他<br>
-            買了飲料說買一送一喝不完<br>
-            看他打籃球送水<br>
-            跟他借筆記<br>
-            變熟後就開始聊天<br>
-            當個小跟班<br>
-            在他身邊晃其實就很開心了<br><br><br>
-            結果昨天晚上他跟我告白！！<br>
-            可是我只是想對他好，沒有想跟他在一起啊啊啊啊😱😱<br>
-            求不會尷尬的拒絕方法🥺<br>
-            如果他問我為什麼不跟他在一起還要對他那麼好該怎麼辦🥺</p>
+            <span class="container" style="margin-left: 5%; margin-top: 5%;">
+            <h4 style="font-weight: bold;">請益 何思賢 經濟學</h4>
+            <p class="mt-3">請問評價如何呢？看板上說這位老師的其他課程很硬，想知道經濟學是不是也如此</p>
 
             <div id="outer" style="margin-left: 38%; margin-bottom: 20px">
               <div class="inner">
-                  <button id="btn" type="submit" class="btn btn-outline-secondary" style=" height: 40px;"
+                  <button type="submit" class="btn btn-outline-secondary" style=" height: 40px;"
                           onClick="return false;"><h6>讚</h6></button>
               </div>
               <div class="inner">
@@ -122,17 +109,16 @@
               </div>
             </div>
 
-            <div>
+          <hr class="line">
 
-            <hr class="line">
+          <textarea cols="110"></textarea>
 
-            <textarea cols="110"></textarea>
+         <button type="submit" class="btn btn-outline-secondary" style=" height: 40px; margin-bottom: 55px"
+            onClick="return false;"><h6>發送</h6></button>
 
-            <button type="submit" class="btn btn-outline-secondary" style=" height: 40px; margin-bottom: 55px"
-                    onClick="return false;"><h6>發送</h6></button>
-        </div>
     </div>
-    <hr class="line">
+</div>
+</div>
 
 </div>
 

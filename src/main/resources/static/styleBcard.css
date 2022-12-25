@@ -236,6 +236,20 @@ body{
    border-radius:5px;
  }
 
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  box-sizing: border-box;
+  width: 280px;
+  height: 80px;
+
+  text-decoration: none;
+  border: solid 3px #000;
+  border-radius: 40px;
+  background: #f4cf47;
+  color: black;
+}
 </style>
 

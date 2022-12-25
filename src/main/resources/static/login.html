@@ -55,24 +55,21 @@
         </div>
     </div>
 </nav>
-
-
-
 <br><br><br><br><br><br>
-<div class="container" style="text-align:center; background:#e7dbca;width:400px;height:330px">
-  <font color="#272727" size="7">登入</font>
-  <font color="#272727" size="6">Log in</font>
-  <br><br>
-  <form name="login_form" method="post" onsubmit="return LoginForm()">
-    帳號：
-    <input id="user_name" type="text" name="user_name" placeholder="用戶名"><br/><br/>
-    密碼  ：
-    <input id="user_password" type="user_password" name="user_password" placeholder="密碼"><br><br>
+<div class="container" style="text-align:center;width:400px;height:330px">
+    <font color="#272727" size="7">登入</font>
+    <font color="#272727" size="6">Log in</font>
+    <br><br>
+    <form name="login_form" method="post" onsubmit="return LoginForm()">
+        帳號：
+        <input id="user_name" type="text" name="user_name" placeholder="用戶名"><br/><br/>
+        密碼  ：
+        <input id="user_password" type="user_password" name="user_password" placeholder="密碼"><br><br>
 
-    <input id="login" type="submit" value="登入" name="login">
-    <br><br><br>
-    <a href="register.html">還沒有帳號？現在就註冊！</a>
-  </form>
+        <input id="login" type="submit" value="登入" name="login">
+        <br><br><br>
+        <a href="register.html">還沒有帳號？現在就註冊！</a>
+    </form>
 </div>
 <!-- Optional JavaScript; choose one of the two!-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -107,20 +104,15 @@
                 var name = $('#user_name').val();
                 var pass = $('#user_password').val();
 
-                if(name == "May" && pass == "123"){
+                if(name == "d0957395" && pass == "123456789"){
                     alert("成功登入");
-                    location.href = "customerdata2.html";
-                }
-                else{
-                    alert("帳號或密碼有誤!");
-                    setTimeout(function(){
-                        history.go(0);
-                    },100);
-                    alert();//沒有加會噴錯，找了兩個禮拜的bug解決方法，只找到這種解法。
+
+                    window.event.returnValue=false;
+                    location.href = "index0.html";
                 }
 
 
               }
-</script>
+        </script>
 </body>
 </html>

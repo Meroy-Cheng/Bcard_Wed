@@ -46,8 +46,6 @@
             <ul class="navbar-nav mb-2 mb-lg-0 d-flex">
                 <li><a class="dropdown-item" href="login.html">登入</a></li>
                 <li><a class="dropdown-item" href="register.html">註冊</a></li>
-                <li><a class="dropdown-item" href="pofile.html">會員中心</a></li>
-                <li><a class="dropdown-item" href="collection.html">收藏</a></li>
             </ul>
 
             <!--<form class="d-flex">
@@ -109,15 +107,20 @@
                 var name = $('#user_name').val();
                 var pass = $('#user_password').val();
 
-                if(name == "王文廷" && pass == "D0957007"){
+                if(name == "May" && pass == "123"){
                     alert("成功登入");
-
-                    window.event.returnValue=false;
-                    location.href = "customerdatafirst.html";
+                    location.href = "customerdata2.html";
+                }
+                else{
+                    alert("帳號或密碼有誤!");
+                    setTimeout(function(){
+                        history.go(0);
+                    },100);
+                    alert();//沒有加會噴錯，找了兩個禮拜的bug解決方法，只找到這種解法。
                 }
 
 
               }
-        </script>
+</script>
 </body>
 </html>
